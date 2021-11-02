@@ -1,4 +1,7 @@
-# Server
+# Full Stack Developer Assignment
+
+
+## Server
 This repository contains code for server
 
 
@@ -19,3 +22,11 @@ In developemnt :
 Or
 
      $ npm start
+
+## Client
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`

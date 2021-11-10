@@ -30,3 +30,6 @@ Or
 In the project directory, you can run:
 
 ### `npm start`
+
+
+API : `http://localhost:3001/api/search?q=sachinsm&type=users`

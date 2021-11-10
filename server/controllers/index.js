@@ -1,13 +1,12 @@
-exports.search = async (queryParams) => {
-  console.log('Query params :', queryParams);
-  // await users.findByPk(id)
-  //   .then(data => {
-  //       console.log(data)
-  return queryParams;
-  //  })
-  // .catch(err => {
-  //   return {
-  //     message: "Error retrieving Tutorial with id=" + id
-  //   };
-  // });
+const axios = require('axios').default;
+// const { githubSearch } = require('../models');
+
+exports.search = async (qp) => {
+  // add check for redis store to redis
+  const response = await axios.get(`https://api.github.com/search/${qp.type}?q=${qp.q}`).then((res) => res.data);
+  return response;
 };
+
+// exports.clearCache = () => {
+//   // clear redis.
+// }
